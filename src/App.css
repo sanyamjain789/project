@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+/* Define animations */
+@keyframes animate-text {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: animate-text 5s forwards;
+}
+
+@keyframes down-to-up {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-down-to-up {
+  animation: down-to-up 2s ease-out;
+}
+
+/* Other custom styles... */
